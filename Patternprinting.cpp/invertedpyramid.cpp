@@ -3,6 +3,19 @@ using namespace std;
 int main(){
     int n; cin>>n;
 
+        // 5
+        // * * * * * 
+        //  * * * * 
+        //   * * * 
+        //    * * 
+        //     * 
+
+        // * * * * * * * * * 
+        //   * * * * * * * 
+        //     * * * * * 
+        //       * * * 
+        //         *
+
     for(int i=1;i<=n;i++){
         // for the space
         for(int j=1;j<i;j++) cout<<" ";
