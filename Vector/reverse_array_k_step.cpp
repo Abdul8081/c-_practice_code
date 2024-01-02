@@ -28,6 +28,7 @@ int main(){
         v.push_back(x);
     }
     int k; cin>>k;
+    if(k>n) k = k%n;
     rotate_by_kstep(v,k);
     for(int i=0;i<n;i++){
         cout<<v[i]<<" ";
