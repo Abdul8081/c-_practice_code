@@ -16,7 +16,6 @@ int main(){
             arr[j][i] = temp;
         }
     }
-    
     // printing
     for(int i=0; i<m; i++){
         for(int j=0; j<n; j++){
