@@ -7,9 +7,9 @@ int main(){
     int h = n-1;
     int ans = -1;
     while(l<=h){
-        int m = l+(h-l)/2;
-        if(arr[m]==m) l = m+1;
-        else{
+        int m = l + (h - l)/2;
+        if(arr[m]<=m) l = m+1;
+        else {
             ans = m;
             h = m-1;
         }
