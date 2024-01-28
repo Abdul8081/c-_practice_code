@@ -16,15 +16,20 @@ int main(){
     int h = n-1;
     bool flag = 0;
     int idx = -1;
+    int m = 0;
     while(l<=h){
-        int m = l+(h-l)/2;
+        m = l+(h-l)/2;
         if(arr[m]==x){
-
+            cout<<"lb : "<<arr[m-1]<<endl;
+            cout<<"ub : "<<arr[m+1]<<endl;
+            break;
         }
         else if(arr[m]<x) l = m+1;
         else h = m-1;
     }
-    cout<<"l.b : "<<arr[h]<<endl;
-    cout<<"u.b : "<<arr[h+1];
+    if(arr[m]!=x){
+        cout<<"l.b : "<<arr[h]<<endl;
+        cout<<"u.b : "<<arr[h+1];
+    }
 
 }
