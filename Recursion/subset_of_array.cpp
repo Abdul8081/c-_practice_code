@@ -16,6 +16,7 @@ int main(){
     vector<vector<int>>anss;
     vector<int> ans;
    f(arr, n, 0, ans,anss);
+   
    for(int i=0;i<anss.size();i++){
         for(int j=0;j<anss[i].size();j++){
             cout<<anss[i][j]<<" ";
